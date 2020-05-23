@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+	<link href="css/gamestylesheet.css">
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+	<link href="css/reset.css">
+	<style>
+#Title {
+	font-size: 1000%; text-align:center; width:100%
+} 
+		h1{
+	color: #BF000F;
+}
+#hang{
+	text-align: center;width:100%;
+}
+#jumbo{
+			background-color: #A8A8A8;
+}
+	
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+ .letter {
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    margin: 0 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    color:#A8A8A8;
+}
+.current-word {
+    list-style: none;
+}
+.output {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.correct {
+    background-color: green;
+    transition: all 1s ease;
+}
+.error {
+    color: red;
+    opacity: 1;
+}
+.warning {
+    color: orange;
+    opacity: 1;
+}
+.win {
+    color: green;
+    opacity: 1;
+}
+			
+}
+	</style>
+</head>
+<body>
+<h1 id="Title">MR. ROBOT</h1>
+<div class="container" "jumbotron jumbotron-fluid">
+<div class="jumbotron" id= "jumbo">
+<h1 id= "hang">HACK-MAN</h1>
+
+ 
+<center>
+<form id="hangman">
+    <input type="text" maxlength="1" minlength="1" name="letter" id="letter" placeholder="Guess a letter" />
+    <input id="guess" name="guess" type="submit" value="Guess" />
+    <button id="restart" name="restart" type="button">Restart</button>
+</form>
+<ul id="letters"></ul>
+<p id="man"></p>
+<p id="output" class="output"></p>
+	<img src="images/FSOCIETY.png">
+		</center>
+	
+<script src="JS/game.js"></script>
+</body>
+</html>

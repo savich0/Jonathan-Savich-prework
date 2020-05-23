@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+#Title {
+	font-size: 1000%; text-align:center; width:100%
+} 
+		h1{
+	color: #BF000F;
+}
+#hang{
+	text-align: center;width:100%;
+}
+#jumbo{
+			background-color: #A8A8A8;
+}
+	
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+ .letter {
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    margin: 0 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    color:#A8A8A8;
+}
+.current-word {
+    list-style: none;
+}
+.output {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.correct {
+    background-color: green;
+    transition: all 1s ease;
+}
+.error {
+    color: red;
+    opacity: 1;
+}
+.warning {
+    color: orange;
+    opacity: 1;
+}
+.win {
+    color: green;
+    opacity: 1;
+}
+			
+}
